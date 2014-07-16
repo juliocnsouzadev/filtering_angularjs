@@ -1,0 +1,28 @@
+#logo {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.hero-unit {
+	background-color: #414141;
+	color: #fff;
+}
+.hero-unit .btn-primary {
+	background-color: #D8450B;
+	background-image: -moz-linear-gradient(top, #D8450B, #E37B52);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#D8450B), to(#E37B52));
+	background-image: -webkit-linear-gradient(top, #D8450B, #E37B52);
+	background-image: -o-linear-gradient(top, #D8450B, #E37B52);
+	background-image: linear-gradient(to bottom, #D8450B, #E37B52);
+}
+.flutuar-img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.flutuar-right {
+	float: right;
+}
+.flutuar-ico {
+	float: left;
+	margin-right: 5px;
+}

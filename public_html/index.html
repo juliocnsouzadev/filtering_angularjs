@@ -1,0 +1,104 @@
+				<!doctype html>
+				<html ng-app>
+				  <head>
+				  	<!-- Le styles -->
+			    	<link href="css/bootstrap.css" rel="stylesheet">
+			    	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+			    	<link href="css/template.css" rel="stylesheet">
+				 
+				    <!-- AngularJS -->
+				    <script src="http://code.angularjs.org/1.2.10/angular.min.js"></script>
+				    <script src="http://code.angularjs.org/1.2.10/angular-animate.min.js"></script>
+				    <!-- Latest compiled and minified CSS -->
+				
+				    
+				  </head>
+				  <body>
+				  	<div class="row">
+				  		<div class="page-header">
+				  			<div class="span2">
+				  			</div>
+
+				  			<!-- cabeçalho -->
+				  			<div  class="span12">
+				  				<ul class="nav nav-pills nav-stacked">
+  									<li class="active">
+    									<a href="#">
+     										<span class="badge pull-right"><h4>Campo Florido - MG</h4></span>
+      										<h1>Busca novas Ruas  X Antigas</h1>
+    									</a>
+  									</li>
+								</ul>
+
+				  			</div>
+				  			<div class="span2">
+				  			</div>
+				  		</div>
+				  	</div>
+
+
+
+				   	<div class="row">
+				   		
+				   		<div class="span2">
+				  		</div>
+				  			
+				  		<div class="span12">
+				    		<div ng-init="streets = [
+				      			{old:'Candida Mendonca', new:'Josefina Dias'},
+				      			{old:'Leopoldino de Oliveira', new:'Adalberto Pajuaba'},
+				      			{old:'Fidelis Reis', new:'Alberto Santos Dummont'},
+				      			{old:'Candida Silva', new:'Michael Jackson'},
+				      			{old:'Leopoldino Soares', new:'Raposo Tavares'},
+				      			{old:'Fidelis Rainhas', new:'Batman e Robin'}
+				    			]">				      			
+				      		</div>
+				      		<div class="row">
+				      			<div class="container span12">
+				      				<div class="row">
+				      					<div class="span12">
+  											<span ><h4>Busque a rua antiga aqui inserindo o novo nome da rua</h4></span>
+  										</div>
+  									</div>
+  									<div class="row">
+  										<div class="span12">	
+	  										<input type="search" ng-model="q" class="form-control span12" placeholder="insira o nome novo da rua">
+	  									</div>	
+	  								</div>
+	  							</div>
+				      		</div>
+
+				      		<br/><br/>
+
+				      		<div class="row">
+				      			<div class="container span12">
+
+				      				<div class="row">
+				      					<div class="span12">
+  											<span class="label label-info"><h5>As possiveis ruas antigas estao listadas abaixo:</h5></span>
+  										</div>
+  									</div>
+  									<p></p>
+				      				<div class="row">
+				      					<div class="span12">
+  											<ul class="list-group">
+				        						<li class="list-group-item" ng-repeat="street in streets | filter:q">
+				          							<h5>{{street.old}}</h5>
+				        						</li>
+				      						</ul>
+  										</div>
+  									</div>
+  									
+	  							</div>
+				      		</div>
+
+
+				      		
+
+
+				    	<div class="span2">
+				  		</div>
+				    	
+				    </div>	
+				  </body>
+				</html>
